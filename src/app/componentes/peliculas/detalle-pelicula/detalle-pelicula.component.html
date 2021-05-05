@@ -1,0 +1,16 @@
+<div *ngIf="!pelicula">
+    <p>Seleccione una Pelicula</p>
+</div>
+
+<div *ngIf="pelicula">
+    <h2>{{pelicula.nombre}}</h2>
+
+    <div class="card bg-dark text-white" style="width:200px">
+        <img class="card-img-top" src="{{pelicula.fotoPelicula}}" width="100%">
+        <div class="card-body">            
+            <p class="card-text">Fecha: {{pelicula.fechaEstreno}}</p>
+            <p class="card-text">Cantidad: {{pelicula.cantidadPublico}}</p>
+            <p class="card-text">ID:{{pelicula.id}}</p>
+        </div>
+    </div>
+</div>

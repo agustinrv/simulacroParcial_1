@@ -1,0 +1,3 @@
+<h1 *ngIf="!pelicula">Seleccione una pelicula</h1>
+
+<button *ngIf="pelicula" class="btn btn-danger btn-block" (click)="BorrarPelicula()" style="height: 200px; margin-top: 60%;" >Borrar</button>

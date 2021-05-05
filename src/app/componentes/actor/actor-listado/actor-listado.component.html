@@ -1,0 +1,13 @@
+<h4 class="d-flex justify-content-between align-items-center mb-3">
+    <span class="text-muted">Actores</span>
+  </h4>
+  <ul class="list-group mb-3">
+    <li  (click)="SeleccionarActor(item)"  *ngFor="let item of this.listaActores" class="list-group-item d-flex justify-content-between lh-condensed" >
+        <div>
+              <h6 class="my-0">{{item.nombre+" " + item.apellido}}</h6>
+              <small class="text-muted">Email: {{item.email}}</small><br>
+              <small class="text-muted">Edad: {{item.edad}}</small><br>
+              <small class="text-muted">Pais: {{item.pais}}</small>
+        </div>
+    </li>
+</ul>

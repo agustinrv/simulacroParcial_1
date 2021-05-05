@@ -1,0 +1,28 @@
+
+
+<main role="main" >
+
+    <app-tabla-peliculas  [listaDePeliculas]="this.listaPeliculas" (peliculaSeleccionada)="RecibirPelicula($event)" ></app-tabla-peliculas>
+    
+  <div class="container">
+    <!-- Example row of columns -->
+    <div class="row">
+      <div class="col-md-4">
+        <app-borrar-pelicula [pelicula]="peliculaSeleccionada" (eliminarPelicula)="EliminarPelicula($event)"></app-borrar-pelicula>
+      </div>
+      <div class="col-md-4">
+        <app-detalle-pelicula [pelicula]="peliculaSeleccionada"></app-detalle-pelicula>
+      </div>
+      <div class="col-md-4">
+        <app-modificar-pelicula [pelicula]="peliculaSeleccionada" (ModificarPelicula)="ModificarPelicula($event)"></app-modificar-pelicula>
+      </div>
+    </div>
+
+    <hr>
+
+  </div> <!-- /container -->
+
+</main>
+
+
+
