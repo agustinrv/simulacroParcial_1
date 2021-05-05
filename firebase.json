@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/simulacroLab4",
+    "public": "dist",
     "ignore": [
       "firebase.json",
       "**/.*",

@@ -5,7 +5,7 @@ import { BusquedaComponent } from './componentes/busqueda/busqueda.component';
 import { PeliculasAltaComponent } from './componentes/peliculas/peliculas-alta/peliculas-alta.component';
 
 const routes: Routes = [
-  {path: '**', redirectTo: 'peliculas/busqueda', pathMatch: 'full'},
+  {path: '', redirectTo: 'peliculas/busqueda', pathMatch: 'full'},
   {path:"peliculas",
    children:
     [
@@ -19,7 +19,8 @@ const routes: Routes = [
     [
       {path:"alta",component:ActorAltaComponent}
     ]
-}
+  },
+  {path: '**', redirectTo: 'peliculas/busqueda', pathMatch: 'full'},
   
 ];
 
